@@ -65,17 +65,17 @@ section {
     color: #4f3cff;
 }
 
-.hero-botones button:nth-child(1):hover {
+.hero-botones .btn:nth-child(1):hover {
     transform: translateY(-3px);
 }
 
 
-.hero-botones button:nth-child(2) {
+.hero-botones .btn:nth-child(2) {
     background: linear-gradient(135deg, #ff5bd7, #4f3cff);
     color: white;
 }
 
-.hero-botones button:nth-child(2):hover {
+.hero-botones .btn:nth-child(2):hover {
     transform: translateY(-3px);
 }
 
@@ -297,7 +297,16 @@ footer {
 }
 
 
+@media (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(4,1fr);
+    }
 
+    .contenedor {
+
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 
 @media (max-width: 900px) {
     .contenedor {
