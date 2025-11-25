@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.encabezado {
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(135deg,#3c8aff,#7f6ff8);
+    height: 150px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.encabezado >h1{
+    font-weight: bold;
+}
+
+.tarjetas {
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+  
+}
+
+.tarj {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.363);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.barras {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  
+
+}
+
+.barra{
+    background-color: rgb(17, 109, 230);
+    width: 200px;
+    height: 10px;
+    text-align: left;
+    margin: 5px;
+    
+
+}
+
+.barras >h3{
+    text-align: left;}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+footer >h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    padding: 10px;
+    font-style: italic;
+    
+}
+
+
+@media (max-width: 900px){
+    .tarjetas {
+        grid-template-columns: repeat(2,1fr);}
+    
+        .layout-tarjetas,
+        .tarj {
+            grid-template-columns: repeat(2,1fr);
+        }
+}
+   
